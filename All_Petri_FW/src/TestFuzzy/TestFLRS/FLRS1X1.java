@@ -23,7 +23,8 @@ public class FLRS1X1 {
 	
 	public static void main (String [] args) throws FileNotFoundException {
 		
-		FLRS flrs1x1 = new FLRS(new FV(FZ.PL), new FV(FZ.PM), new FV(FZ.ZR), new FV(FZ.NL),new FV(FZ.ZR));
+		//FLRS flrs1x1 = new FLRS(new FV(FZ.PL), new FV(FZ.PM), new FV(FZ.ZR), new FV(FZ.NL),new FV(FZ.ZR));
+		FLRS flrs1x1 = new FLRS(new FV(FZ.NL), new FV(FZ.NM), new FV(FZ.ZR), new FV(FZ.PM),new FV(FZ.PL));
 
 		flrs1x1.Print();
 		
@@ -31,7 +32,7 @@ public class FLRS1X1 {
 		pn.PetriNetName = "Main Petri";
 		pn.NetworkPort = 1081;
 
-		pn.SetInputFile("D:\\PetriInputData\\test3.txt");
+		pn.SetInputFile("C:\\Users\\negre\\OneDrive\\Desktop\\DCS_project\\PetriInputData\\test3.txt");
 		DataFuzzy p1 = new DataFuzzy();
 		p1.SetName("P1");
 		//p1.SetValue(new Fuzzy(0.1F));
